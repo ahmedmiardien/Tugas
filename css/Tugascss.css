@@ -1,54 +1,36 @@
-html,body{
+html{
 	height: 100%;
 }
 body{
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 	font-family:"Arial";
+	background: linear-gradient(#16a085, #2c3e50);
+	height: 100%;
 }
-#content{
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
-#tabel{
-	width:40%;
-	height: 174px;
+
+#table{
+	width: 60%;
 	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#tabel h2{
-margin:1% 30%
+
+#table table {
+	width: 100%;
+    border-collapse: collapse;
+    background-color: white;
 }
-#tabel table{
-	width:100%;
-	border-radius:5px;
-}
-#tabel th{
-	height:34px;
-	background-color:#30336b;
-    color:white;
-}
-#tabel th,td{
-	text-align:left;
-    padding:8px;
+#table th, td {
+    text-align: left;
+    padding: 10px;
     border-bottom: 1px solid #ddd;
 }
-#tabel td{
-	height:24px;
-}
-#tabel tr:hover {background-color:#f5f5f5;}
-
 #form{
 	padding: 10px;
 	background-color: white;
-	margin-left: -1%;
-	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-top: 30px; 
-}
-#form td{
 	text-align:left;
-    padding:2px;
-    border-bottom: none;
+	width:25%;
+	margin-top:2%;
+	border-radius: 5px 5px 5px 5px;
 }
 #form input[type=text]{
     width:100%;
@@ -57,18 +39,23 @@ margin:1% 30%
     display:inline-block;
     border:1px solid #ccc;
     box-sizing:border-box;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 #form input[type=submit]{
     width:100%;
-    background-color:#30336b;
+    background-color: #34495e;
     color:white;
     padding:14px 20px;
     margin:8px 0;
     border:none;
     cursor:pointer;
-    border-radius: 20px;
+    border-radius: 4px;
 }
 #form input[type=submit]:hover{
-    background-color:#130f40;
+    background-color:#16a085;
+}
+.form_error{
+    font-size: 12px;
+    color: red;
+}
 }
